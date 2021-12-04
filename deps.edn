@@ -1,6 +1,7 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.10.3"}
-        io.github.nextjournal/clerk {:mvn/version "0.3.233"}}
+        io.github.nextjournal/clerk {:mvn/version "0.3.233"}
+        net.mikera/core.matrix {:mvn/version "0.62.0"}}
  :aliases
  {:run-m {:main-opts ["-m" "xandrews.advent"]}
   :run-x {:ns-default xandrews.advent

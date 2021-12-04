@@ -1,4 +1,6 @@
-(ns xandrews.day02 (:require [clojure.java.io :as io] [clojure.string :as s]))
+(ns xandrews.day02
+  (:require [clojure.java.io :as io]
+            [clojure.string :as s]))
 
 ;; # Part 1
 
