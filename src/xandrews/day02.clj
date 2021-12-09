@@ -1,4 +1,4 @@
-(ns xandrews.day02
+(ns xandrews.day02jk
   (:require [clojure.java.io :as io]
             [clojure.string :as s]))
 
@@ -105,13 +105,7 @@
 ;; position and depth you would have after following the planned course. What do
 ;; you get if you multiply your final horizontal position by your final depth?
 
-;; define the dispatch function separately
-(defn move-2-dispatch [_ cmd]
-  (:direction cmd))
-
-;; defmulti can now reference the function by var
-;; when redefined we don't need the hack to remove old dispatch fn from the ns!
-(defmulti move-2 #'move-2-dispatch)
+(defmulti move-2 (fn [_ cmd] (:direction cmd)))
 
 (defmethod move-2 :forward [{:keys [position aim depth] :as coordinates} {:keys [magnitude]}]
   (assoc coordinates

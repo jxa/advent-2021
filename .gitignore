@@ -25,3 +25,5 @@
 /checkouts
 /classes
 /target
+/.DS_Store
+/.cache/
